@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BTestNGSuite">
+	<listeners>
+        <listener class-name="test.testex.CustomTestListener" />
+    </listeners>
+    <test name="LoginTests">
+        <classes>
+            <class name="test.testex.ListenerExampleTest" />
+        </classes>
+    </test>
+    <!-- Selenium Grid Local Parameters -->
+	
+	 <!-- Customize Report-->
+	<!--<test name="LoginTests">
+        <classes>
+            <class name="test.testex.CustomizeReportLoginTest" />
+        </classes>
+    </test>-->
+	 
+	 <!-- Global Parameter -->
+   <!--<parameter name="baseURL" value="https://demoqa.com/login" />
+    <test name="LoginTest"> -->
+        <!-- Local Parameters -->
+       <!-- <parameter name="username" value="user1" />
+        <parameter name="password" value="password1" />
+        <classes>
+            <class name="test.testex.TestNGParameterExample" />
+        </classes>
+    </test> -->
+  <!--  <test thread-count="1" name="Test">
+    <classes>
+      <class name="test.testex.AppTest"/>
+    </classes>
+  </test> --> 
+ <!-- <test name="ValidLoginTest">
+        <classes>
+            <class name="test.testex.LoginTests">
+                <methods>
+                     <exclude name="testEmptyFields" />
+                     <exclude name="testInvalidLogin" />
+                     <include name="testValidLogin" />
+                </methods>
+            </class>
+        </classes>
+    </test> -->
+
+   <!-- <test name="InvalidLoginTest">
+        <classes>
+            <class name="test.testex.LoginTests">
+                <methods>
+                    <include name="testInvalidLogin" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="ExcludeEmptyFieldsTest">
+        <classes>
+            <class name="test.testex.LoginTests">
+                <methods>
+                    <exclude name="testEmptyFields" />
+                </methods>
+            </class>
+        </classes>
+    </test> -->
+    <!-- <test name="Sanity Tests">
+        <classes>            
+          <class name="test.testex.LoginTestGroup">
+                <methods>                    
+                    <include name="testLoginPageTitle" />
+                    <include name="testLoginFormPresence" />
+                </methods>
+            </class>
+        </classes>
+    </test> -->
+   <!--  <test name="Smoke and Regression Tests">
+        <groups>
+            <run>              
+                <include name="smoke" />
+                <include name="regression" />
+            </run>
+        </groups>
+        <classes>
+            <class name="test.testex.LoginTestGroup" />
+        </classes>
+    </test> -->
+</suite> <!-- BTestNGSuite -->
+
+<!-- Selenium Grid Suits -->
+<!-- Selenium Grid Suits with multiple parameter tests -->
+<!--<suite name="Suite2">
+	<test name="Test1">
+		<parameter name="browsername" value="firefox" />
+        <classes>
+            <class name="test.testex.SeleniumGridParameterCapDemo" />
+        </classes>
+    </test>
+    <test name="Test2">
+		<parameter name="browsername" value="firefox" />
+        <classes>
+            <class name="test.testex.SeleniumGridParameterCapDemo" />
+        </classes>
+    </test>
+</suite>-->
+
+<!-- Selenium Grid Suits with multiple parameter tests parallely -->
+<!--<suite name="Suite3" parallel="tests">
+	<test name="Test1">
+		<parameter name="browsername" value="firefox" />
+        <classes> -->
+             <!--<class name="test.testex.SeleniumGridDataProviderExternalChild" />-->
+           <!-- <class name="test.testex.SeleniumGridDataProviderExternalChildThreadLocal" />
+        </classes>
+    </test> -->
+<!--     <test name="Test2">
+		<parameter name="browsername" value="firefox" />
+        <classes> -->
+            <!--<class name="test.testex.SeleniumGridDataProviderExternalChild" />-->
+<!--             <class name="test.testex.SeleniumGridDataProviderExternalChildThreadLocal" />
+        </classes>
+    </test>
+    <test name="Test3">
+		<parameter name="browsername" value="firefox" />
+        <classes> -->
+            <!-- <class name="test.testex.SeleniumGridDataProviderExternalChild" />-->
+<!--             <class name="test.testex.SeleniumGridDataProviderExternalChildThreadLocal" />
+        </classes>
+    </test> 
+</suite>-->
